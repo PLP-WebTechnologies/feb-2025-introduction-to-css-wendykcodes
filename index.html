@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://media.istockphoto.com/id/1257723211/vector/young-african-american-woman-with-black-curly-hair-in-the-yellow-hat-with-a-wide-brim.jpg?s=612x612&w=0&k=20&c=4AS46PgOwvjJYe31R6xEVNcXscQSlzIWhLogH6tWTv4=" type="image/x-icon">
+    <title>Natural hair blog</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Wendy</h1>
+            <nav>
+                <div class="hamburger" id="hamburger">
+                    &#9776;
+                </div>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero_texts">
+                 <h2>Welcome to the Natural Hair Blog</h2>
+            <p>Your go-to source for tips, tricks, and inspiration for natural hair care.</p>
+            </div>
+           
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <p>We are passionate about celebrating and embracing natural hair in all its forms. Join us on this journey!</p>
+        </section>
+
+        <section id="blog" class="blog-section">
+            <h2>Latest Posts</h2>
+            <article class="blog-post">
+                <h3>5 Key Tips for Healthy Natural Hair</h3>
+                <div class="hair_tips">
+                    <div class="tip1">
+                        <h3>1. Moisturize Consistently</h3>
+                        <p>Natural hair tends to be dry due to its coiled structure, which makes it harder for natural oils to travel down the hair shaft.</p>
+                        <ul>
+                            <li>Use water-based leave-ins or aloe vera juice to hydrate.</li>
+                            <li>Seal moisture in with natural oils (like coconut, olive, or jojoba) or butters (like shea or mango).</li>
+                            <li>Incorporate deep conditioning weekly or bi-weekly.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tip2">
+                        <h3>2. Gentle Handling and Protective Styling</h3>
+                        <p>Minimize breakage by treating your hair gently.</p>
+                        <ul>
+                            <li>Detangle with your fingers or a wide-tooth comb when hair is damp and conditioned.</li>
+                            <li>Use protective styles to reduce manipulation.</li>
+                            <li>Avoid tight styles that put tension on your edges or scalp.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tip3">
+                        <h3>3. Use Sulfate-Free, Natural Hair Products</h3>
+                        <p>Many commercial shampoos are too harsh and strip natural oils.</p>
+                        <ul>
+                            <li>Opt for sulfate-free shampoos or co-wash with cleansing conditioners.</li>
+                            <li>Read labels and avoid drying alcohols and mineral oils that can clog hair follicles or dry out your hair.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tip4">
+                        <h3>4. Trim Regularly</h3>
+                        <p>Split ends can travel up the hair shaft and cause more damage.</p>
+                        <ul>
+                            <li>Trim every 8-12 weeks, or as needed, to maintain healthy ends.</li>
+                            <li>Don't wait for major damage. Preventive trim help retain length over time.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tip5">
+                        <h3>5. Protect Hair at Night</h3>
+                        <p>Night-time care is just as important as daily maintenance.</p>
+                        <ul>
+                            <li>Sleep on a satin or silk pillowcase or use a satin bonnet/scarf.</li>
+                            <li>This prevents moisture loss and reduces friction that can cause breakage.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </article>
+            <article class="blog-post">
+                <h3>Natural Hair Care Routine</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+            </article>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+
+        <footer class="footer-section">
+            <p>&copy; 2025 Natural Hair Blog. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+
+
+
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const navList = document.getElementById('nav-list');
+
+            // When the hamburger is clicked, toggle the 'active' class
+            hamburger.addEventListener('click', () => {
+            navList.classList.toggle('active');
+});
+        </script>
+</body>
+</html>

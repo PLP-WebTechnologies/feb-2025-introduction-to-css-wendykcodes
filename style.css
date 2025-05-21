@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora", sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #f8f8f8;
+}
+
+.nav-list {
+    list-style-type: none; 
+    display: flex; 
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0 20px; 
+}
+
+.nav-list li a {
+    color: black; 
+    text-decoration: none; 
+    font-size: 16px; 
+    padding: 10px 15px; 
+    display: block; 
+    transition: background-color 0.3s; 
+}
+
+.nav-list li a:hover {
+    background-color: #575757; 
+    border-radius: 5px; 
+}
+
+.hamburger {
+    font-size: 30px;
+    color: #575757;
+    cursor: pointer;
+    display: none;
+}
+
+.hero-section {
+    width: 100%;
+    min-height: 70vh;
+    padding-bottom: 30px;
+    background-image: url("https://media.istockphoto.com/id/1257723211/vector/young-african-american-woman-with-black-curly-hair-in-the-yellow-hat-with-a-wide-brim.jpg?s=612x612&w=0&k=20&c=4AS46PgOwvjJYe31R6xEVNcXscQSlzIWhLogH6tWTv4=");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+/* .hero-section h2{
+    padding-top: 30%;
+    color: wheat;
+}
+
+.hero-section p{
+    color: wheat;
+    margin-top: 20px;
+} */
+
+.hero_texts {
+    padding-top: 20%;
+    color: wheat;
+}
+
+
+.about-section {
+    width: 100%;
+    height: 70vh;
+    background-color: #f8f8f8;
+    justify-content: center;
+    align-items: center;
+}
+
+#about h2{
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.blog-section {
+    width: 100%;
+    min-height: 70vh;
+    background-color: #f8f8f8;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-section h2, h3 {
+    text-align: center;
+}
+
+.hair_tips {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+ 
+}
+
+.hair_tips h3 {
+    text-align: left;
+}
+
+.hair_tips ul li {
+    margin-left: 30px;
+}
+
+.tip1, .tip2, .tip3, .tip4, .tip5 {
+    padding-bottom: 20px;
+}
+
+.contact-section {
+    width: 100%;
+    height: auto;
+    background-color: #f8f8f8;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section  form label {
+    display: block;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-section form input {
+    width: 100%;
+    padding-left: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-section form button {
+    background-color: goldenrod;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        width: 100;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: none;
+        display: none;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .nav-list.active {
+        display: flex; 
+    }
+
+    .hamburger {
+        display: block; 
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+}
